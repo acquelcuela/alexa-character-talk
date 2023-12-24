@@ -178,5 +178,5 @@ exports.handler = Alexa.SkillBuilders.custom()
         IntentReflectorHandler)
     .addErrorHandlers(
         ErrorHandler)
-    .withCustomUserAgent('com/kaeru-tan/v1.0')
+    .withCustomUserAgent(`${config.CUSTOM_USER_AGENT}`)
     .lambda();
